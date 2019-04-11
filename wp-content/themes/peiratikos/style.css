@@ -1,0 +1,544 @@
+/*
+Theme Name: Peiratikos Blue
+Theme URI: http://peiratikos.net/
+Description: Blue pirate theme
+Author: Steven Berg
+Author URI: http://peiratikos.net/
+Template: peiratikos
+Last Updated: 29 July 2005
+
+Feel free to adapt elements of this CSS for your own projects, but please don't copy the entire design.
+*/
+
+/* Base rules */
+
+.house {
+	color: #00c;
+}
+
+html {
+	min-width: 748px;
+}
+
+.alt {
+	display: none;
+}
+
+img {
+	border: 0;
+}
+
+acronym {
+	border-bottom: 1px dotted #000;
+}
+
+hr {
+	clear: both;
+}
+
+p.pagenav {
+	margin: 0 0 10px 0;
+}
+
+.lalign {
+	clear: left;
+	float: left;
+	display: block;
+	margin-left: 0;
+}
+.ralign {
+	clear: right;
+	float: right;
+	display: block;
+	margin-right: 0;
+}
+.calign {
+	clear: both;
+	text-align: center;
+	display: block;
+}
+
+/* Primary layout divisions */
+
+body#peiratikos-net {
+	text-align: center;
+	margin: 0;
+	padding: 0 0 20px 0;
+	border: 0;
+	background: #369 url(images/bg.png);
+	color: #000;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small; /* IE5 Win */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: small; /* IE6 Win */
+}
+html>body#peiratikos-net {
+	font-size: 12px;
+}
+
+div#wrap {
+	text-align: left;
+	width: 748px;
+	margin: 0 auto;
+	padding: 0;
+	background: #fff;
+	color: #000;
+}
+
+div#head {
+	width: 748px;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	background: #369 url(images/bg.png);
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	text-indent: -9999px;
+}
+
+h1 a:link, h1 a:visited {
+	display: block;
+	width: 748px;
+	height: 100px;
+	background: transparent url(images/header-ie.png) top left no-repeat;
+	text-decoration: none;
+}
+html>body h1 a:link, html>body h1 a:visited {
+	background-image: url(images/header.png);
+}
+
+div#main {
+	clear: both;
+	width: 748px;
+	margin: 0 0 0 0;
+	padding: 0;
+	border: 0;
+	border-left: 1px solid #036;
+	border-right: 1px solid #036;
+	background: #fff;
+	voice-family; "\"}\"";
+	voice-family: inherit;
+	width: 746px;
+}
+html>body div#main {
+	width: 746px;
+}
+
+div#content {
+	float: left;
+	width: 460px;
+	margin: 20px 0 10px 10px; /* IE Win */
+	padding: 0;
+}
+html>body div#content {
+	margin: 20px 0 10px 20px;
+}
+
+div#widecontent {
+	float: left;
+	width: 666px;
+	margin: 20px 20px 10px 20px;
+	padding: 0;
+}
+html>body div#widecontent {
+	margin: 20px 40px 10px 40px;
+}
+
+div#foot {
+	clear: both;
+	width: 746px; /* IE5 Win */
+	margin: 0;
+	padding: 5px 5px 0 10px;
+	border: 0;
+	border-bottom: 1px solid #036;
+	font-size: xx-small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 731px;
+	font-size: x-small;
+}
+html>body div#foot {
+	width: 731px;
+	font-size: 10px;
+}
+
+div#foot p {
+	margin: 0;
+	padding: 0 0 5px 0;
+}
+
+/* Primary navigation */
+
+ul#primarynav {
+	float: left;
+	width: 748px;
+	margin: 0;
+	padding: 0;
+	border: 0;	list-style-type: none;
+	background: #036 url(images/menubg.png);
+	font-size: x-small; /* IE5 Win */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: small; /* IE6 Win */
+}
+html>body ul#primarynav {
+	font-size: 12px;
+}
+
+ul#primarynav li {
+	float: left;
+	width: 187px;
+	margin: 0;
+	padding: 0;
+}
+html>body ul#primarynav li {
+	width: auto;
+	min-width: 187px;
+}
+
+ul#primarynav a:link, ul#primarynav a:visited {
+	display: block;
+	margin: 0;
+	padding: 5px 0;
+	background: transparent;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+html>body #ulprimarynav a:link, html>body ul#primarynav a:visited {
+}
+ul#primarynav a:hover {
+/*	background: #69c;*/
+	color: #fff;
+	text-decoration: underline;
+}
+ul#primarynav a:active {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* Sidebar */
+
+div#secondarynav {
+	float: right;
+	width: 210px;
+	margin: 20px 5px 20px 0; /* IE Win */
+	padding: 0;
+	font-size: xx-small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: x-small;
+}
+html>body div#secondarynav {
+	margin: 20px 10px 20px 0;
+	font-size: 10px;
+}
+
+div#secondarynav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+div#secondarynav li, div#secondarynav p {
+	margin: 5px 0;
+}
+
+div#secondarynav p.buttons {
+	margin: 30px 0 0 0;
+	text-align: center;
+}
+
+div#secondarynav #searchform {
+	margin: 0;
+}
+
+/* Typography */
+
+h2, h3 {
+	clear: both;
+	margin: 0 0 10px 0;
+	padding: 0;
+	color: #666;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: medium; /* IE5 Win */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: large; /* IE6 Win */
+}
+html>body h2 {
+	font-size: 16px;
+}
+
+div.post h2, div.singlepost h2, div.page h2, div.post h3 {
+	margin: 0;
+}
+
+div#secondarynav h2 {
+	margin: 20px 0 0 0;
+	font-size: small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: medium;
+}
+html>body div#secondarynav h2 {
+	font-size: 14px;
+}
+
+h3 {
+	font-size: small; /* IE5 Win */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: medium; /* IE6 Win */
+}
+html>body h3 {
+	font-size: 14px;
+}
+
+div.text h3 {
+	margin: 1em 0;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+p {
+	margin: 1em 0 0 0;
+	padding: 0;
+}
+
+div.text, div.text td, div.text th {
+	font-family: "Book Antiqua", Georgia, "Times New Roman", Times, serif;
+	line-height: 150%;
+}
+
+td, th {
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+blockquote {
+	margin: 1em 20px;
+	padding: 0 0 0 20px;
+	background: transparent url(images/quotes.png) top left no-repeat;
+}
+
+cite {
+	font-style: italic;
+}
+cite.People {
+	font-style: normal;
+}
+
+/* Default links */
+
+a:link, a:visited {
+	color: #369;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	color: #036;
+	text-decoration: underline;
+}
+a:active {
+	color: #69c;
+	text-decoration: underline;
+}
+
+/* Forms */
+
+form, form p {
+	margin: 10px 0;
+	padding: 0;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+legend {
+	display: none;
+}
+
+input, textarea {
+	padding: 2px;
+	border: 1px solid #999;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: small;
+}
+html>body input, html>body textarea {
+	font-size: 12px;
+}
+
+input:hover, textarea:hover {
+	border-color: #369;
+}
+
+input.text:focus, textarea:focus {
+	border-color: #69c;
+}
+
+input.button {
+	padding: 0;
+	border-style: outset;
+	background: #f0f0f0;
+	color: #036;
+	font-weight: bold;
+}
+html>body input.button {
+	padding: 1px 2px;
+}
+
+input.button:active {
+	border-color: #69c;
+	border-style: inset;
+	background: #ddd;
+}
+
+#commentform textarea {
+	width: 460px;
+}
+
+/* Lists */
+
+ul {
+	list-style-type: square;
+}
+
+li {
+	margin: 0.5em 0;
+}
+
+div.text ul ul, div.text ol ol {
+	margin-right: 0;
+}
+
+/* Images */
+
+div.img img, div.text img {
+	margin: 0 10px 10px 10px;
+	border: 1px solid #ccc;
+}
+div.text img.lalign {
+	margin-left: 0;
+}
+div.text img.ralign {
+	margin-right: 0;
+}
+
+div.img a:link img, div.text a:link img, div.img a:visited img, div.text a:visited img {
+	border: 2px solid #369;
+}
+div.img a:hover img, div.text a:hover img {
+	border: 2px solid #036;
+}
+div.img a:active img, div.text a:active img {
+	border: 2px solid #69c;
+}
+
+div.text div.calign {
+	margin: 1em 0 0 0;
+}
+
+/* Posts, pages and comments */
+
+div.post, div.singlepost, div.page, div.gotopost {
+	clear: both;
+	margin: 0 0 30px 0;
+	padding: 0;
+}
+div.singlepost {
+	margin-bottom: 0;
+}
+
+div.gotopost {
+	padding: 5px;
+	background: #eee;
+	border: 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+p.postmeta, p.postmeta2, p.commentmeta, p.commentmeta2, div.modmsg, p.gotometa {
+	/*font-family: "Book Antiqua", Georgia, "Times New Roman", Times, serif;*/
+}
+p.postmeta, p.commentmeta {
+	margin: 0 0 10px 0;
+}
+p.postmeta {
+	font-size: 10px;
+}
+p.postmeta2, p.commentmeta2 {
+	margin: 10px 0 0 0;
+	text-align: right;
+}
+html>body p.postmeta2 { text-align: left; }
+p.gotometa {
+	margin: 0 0 0 10px;
+}
+
+li.comment, li.altcomment, li.modcomment, p.postmetabox {
+	clear: both;
+	margin: 10px 0;
+	padding: 9px 10px;
+	border: 0;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+p.postmetabox {
+	padding: 4px 5px;
+	border-color: #d3d3d3;
+	background: #f5f5f5;
+	font-size: xx-small; /* IE5 Win */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: x-small; /* IE6 Win */
+}
+html>body p.postmetabox {
+	font-size: 10px;
+}
+
+li.comment {
+	border-color: #c3c3c3;
+	background: #e5e5e5;
+}
+
+li.altcomment {
+	border-color: #d3d3d3;
+	background: #f5f5f5;
+}
+
+li.modcomment {
+	border: 2px solid #c00;
+	padding: 8px;
+}
+
+ol.commentlist {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+div.modmsg {
+	color: #000;
+	font-size: xx-small; /* IE5 Win */
+	font-weight: bold;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: x-small; /* IE6 Win */
+}
+html>body div.modmsg {
+	font-size: 10px;
+}
