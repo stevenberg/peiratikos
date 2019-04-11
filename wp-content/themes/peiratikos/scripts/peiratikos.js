@@ -18,7 +18,7 @@ window.onload = function() {
 					stext = 'search';
 				}
 				//location.href = 'http://70.85.217.130/~steven/search/' + stext;
-				location.href = 'http://peiratikos.net/search/' + stext;
+				location.href = 'https://peiratikos.net/search/' + stext;
 				return false;
 			}
 		}

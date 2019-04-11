@@ -1,3 +1,3 @@
 <?php
-header ('Location: http://peiratikos.net/blog/archives/');
+header ('Location: https://peiratikos.net/blog/archives/');
 ?>
