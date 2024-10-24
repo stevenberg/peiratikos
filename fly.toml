@@ -1,0 +1,17 @@
+# fly.toml app configuration file generated for peiratikos on 2024-10-24T07:51:48-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'peiratikos'
+primary_region = 'ewr'
+
+[http_service]
+internal_port = 80
+force_https = true
+processes = ['app']
+
+[[vm]]
+memory = '1gb'
+cpu_kind = 'shared'
+cpus = 1
